@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FirstAid</title>
+    <link rel="stylesheet" href="./firstaid.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hd1">
+        <div>
+          <img src="../../images/logo.jpg" alt="logo" height="100px" />
+        </div>
+        <div class="nav">
+          <nav>
+            <a href="">Home</a>
+            <a href="">LiveDost</a>
+            <a href="">alphag</a>
+            <a href="">betag</a>
+            <a href="">Contact Us</a>
+          </nav>
+        </div>
+        <div class="hb1">
+          <div>
+            <button>LOGIN</button>
+          </div>
+          <div>
+            <button id="emergency">!!SOS!!</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- <div id="bbc">
+        <nav class="breadcrumb">
+            <span id="breadcrumb-container"></span>
+        </nav>
+    </div> -->
+      <div class="container">
+        <h1>First Aid Services</h1>
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search First Aid Methods..."
+          onkeyup="filterCards()"
+        />
+
+        <div class="cards" id="cardContainer">
+          <div class="card" data-title="Burns">
+            <h2>Burns</h2>
+            <img src="../../images/firstaid/burn.jpg" alt="" />
+            <p>Cool the burn with running water for at least 10 minutes.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src="../../images/firstaid/burn.jpg"
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Cuts">
+            <h2>Cuts</h2>
+            <img src="../../images/firstaid/cuts.jpg" alt="" height="250px" />
+            <p>Apply pressure with a clean cloth to stop bleeding.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Choking">
+            <h2>Choking</h2>
+            <img
+              src="../../images/firstaid/Choking.jpeg"
+              alt=""
+              height="250px"
+            />
+            <p>Perform back blows and abdominal thrusts.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Fractures">
+            <h2>Fractures</h2>
+            <img
+              src="../../images/firstaid/Fractures.jpeg"
+              alt=""
+              height="250px"
+            />
+            <p>Immobilize the affected area and seek medical help.</p>
+            <button class="openPopup">Read More</button>
+                    <div class="popup-container" style="display: none;">
+                        <div class="popup">
+                            <div class="popup-header">
+                                <span class="closePopup">&times;</span>
+                            </div>
+                    
+                            <!-- Navbar -->
+                            <div class="popup-nav">
+                                <button class="tab-button active" onclick="showTab(this, 'reading')">Reading</button>
+                                <button class="tab-button" onclick="showTab(this, 'video')">Video</button>
+                            </div>
+                    
+                            <!-- Content Area -->
+                            <div class="popup-content">
+                                <!-- Reading Section -->
+                                <div class="tab-content reading active">
+                                    <p class="textContent">Loading...</p>
+                                    <img class="stepImage" src="" alt="Step Image" width="100%" height="200px">
+                    
+                                    <!-- Navigation Buttons -->
+                                    <div class="nav-buttons">
+                                        <button class="prevBtn" onclick="changeStep(-1)">❮ Prev</button>
+                                        <button class="nextBtn" onclick="changeStep(1)">Next ❯</button>
+                                    </div>
+                                </div>
+                    
+                                <!-- Video Section -->
+                                <div class="tab-content video">
+                                    <iframe class="videoFrame" width="100%" height="250"
+                                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                        frameborder="0" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+          <div class="card" data-title="Food Poisoning">
+            <h2>Food Poisoning</h2>
+            <img
+              src="../../images/firstaid/food poision.jpeg"
+              alt=""
+              height="250px"
+            />
+            <p>Do not induce vomiting. Call emergency services immediately.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Nosebleeds">
+            <h2>Nosebleeds</h2>
+            <img
+              src="../../images/firstaid/Nosebleeds.jpeg"
+              alt=""
+              height="250px"
+            />
+            <p>Apply pressure with a clean cloth to stop bleeding.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Chemical Burns">
+            <h2>Chemical Burns</h2>
+            <img
+              src="../../images/firstaid/Chemical Burns.jpg"
+              alt=""
+              height="250px"
+            />
+            <p>Apply pressure with a clean cloth to stop bleeding.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Asthma Attack">
+            <h2>Asthma Attack</h2>
+            <img
+              src="../../images/firstaid/Asthma Attack.jpeg"
+              alt=""
+              height="250px"
+            />
+            <p>Apply pressure with a clean cloth to stop bleeding.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Snake Bite">
+            <h2>Snake Bite</h2>
+            <img
+              src="../../images/firstaid/Snake Bite.jpeg"
+              alt=""
+              height="250px"
+            />
+            <p>Apply pressure with a clean cloth to stop bleeding.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Animal Bites & Insect Stings">
+            <h2>Animal Bites & Insect Stings</h2>
+            <img
+              src="../../images/firstaid/Animal Bites & Insect Stings.webp"
+              alt=""
+              height="250px"
+            />
+            <p>Apply pressure with a clean cloth to stop bleeding.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Road accident">
+            <h2>Road accident</h2>
+            <img
+              src="../../images/firstaid/road accident.jpg"
+              alt=""
+              height="250px"
+            />
+            <p>Apply pressure with a clean cloth to stop bleeding.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Heatstroke & Hypothermia">
+            <h2>Heatstroke & Hypothermia</h2>
+            <img
+              src="../../images/firstaid/Heatstroke & Hypothermia.jpg"
+              alt=""
+              height="250px"
+            />
+            <p>Apply pressure with a clean cloth to stop bleeding.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Electric Shock">
+            <h2>Electric Shock</h2>
+            <img
+              src="../../images/firstaid/electricshock.jpeg"
+              alt=""
+              height="250px"
+            />
+            <p>Apply pressure with a clean cloth to stop bleeding.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-title="Heart Attack">
+            <h2>Heart Attack</h2>
+            <img
+              src="../../images/firstaid/heartattack.jpeg"
+              alt=""
+              height="250px"
+            />
+            <p>Apply pressure with a clean cloth to stop bleeding.</p>
+            <button class="openPopup">Read More</button>
+            <div class="popup-container" style="display: none">
+              <div class="popup">
+                <div class="popup-header">
+                  <span class="closePopup">&times;</span>
+                </div>
+
+                <!-- Navbar -->
+                <div class="popup-nav">
+                  <button
+                    class="tab-button active"
+                    onclick="showTab(this, 'reading')"
+                  >
+                    Reading
+                  </button>
+                  <button class="tab-button" onclick="showTab(this, 'video')">
+                    Video
+                  </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="popup-content">
+                  <!-- Reading Section -->
+                  <div class="tab-content reading active">
+                    <p class="textContent">Loading...</p>
+                    <img
+                      class="stepImage"
+                      src=""
+                      alt="Step Image"
+                      width="100%"
+                      height="200px"
+                    />
+
+                    <!-- Navigation Buttons -->
+                    <div class="nav-buttons">
+                      <button class="prevBtn" onclick="changeStep(-1)">
+                        ❮ Prev
+                      </button>
+                      <button class="nextBtn" onclick="changeStep(1)">
+                        Next ❯
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Video Section -->
+                  <div class="tab-content video">
+                    <iframe
+                      class="videoFrame"
+                      width="100%"
+                      height="250"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameborder="0"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-section">
+          <h3>Health</h3>
+          <ul>
+              <li><a href="#">Nutrition</a></li>
+              <li><a href="#">Exercise</a></li>
+              <li><a href="#">Mental Health</a></li>
+              <li><a href="#">First Aid</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h3>Hospital Guides</h3>
+          <ul>
+              <li><a href="#">Emergency Care</a></li>
+              <li><a href="#">Doctor Visits</a></li>
+              <li><a href="#">Health Tips</a></li>
+              <li><a href="#">Insurance</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h3>About</h3>
+          <ul>
+              <li><a href="#">Who We Are</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h3>Stay Connected</h3>
+          <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <button class="theme-toggle">Toggle Dark Mode</button>
+      </div>
+  </div>
+</footer>    
+    <script src="./firstaid.js"></script>
+  </body>
+</html>

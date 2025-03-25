@@ -1,0 +1,229 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+main{
+    background-color: #79aadb;
+}
+/* Header Styling */
+header {
+    background-color: #f2f2f2;  /* Light background for a medical feel */
+    padding: 15px 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex container for header */
+.hd1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.hd1 img {
+    max-height: 80px;
+}
+
+/* Navigation Bar */
+.nav nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav nav a {
+    text-decoration: none;
+    color: #2D9CDB;  /* Soft medical blue */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.nav nav a:hover {
+    color: #133363;  /* Teal green on hover */
+}
+
+/* Right-side buttons */
+.hb1 {
+    display: flex;
+    gap: 15px;
+}
+
+/* Buttons */
+.hb1 button {
+    background: linear-gradient(to right, #2764c0, #003f7f); /* Gradient from lighter blue to navy */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 31, 63, 0.2);
+
+}
+
+.hb1 button:hover {
+    background: linear-gradient(to right, #003f7f, #2764c0); /* Reversed gradient on hover */
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 15px rgba(0, 31, 63, 0.3); /* Darker green on hover */
+}
+#emergency {
+    background: linear-gradient(to right, #ff0000, #cc0000); /* Red gradient */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    animation: pulse 1.5s infinite alternate;
+}
+
+/* Hover Effect */
+#emergency:hover {
+    background: linear-gradient(to right, #cc0000, #990000); /* Darker red on hover */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.9);
+    transform: scale(1.05);
+}
+
+/* main */
+main {
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+    align-items: center;
+    gap: 20px;
+    padding: 40px 10px;
+}
+
+/* Button Styling */
+.bbox {
+    width: 80%;
+    max-width: 400px;
+    height: 80px;
+    background: white; /* White background */
+    border: 2px solid #001f3f; /* Navy blue border */
+    color: #001f3f; /* Navy blue text */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 31, 63, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bbox:hover {
+    background: #001f3f;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+/* footer styling */
+/* Footer Styling */
+.footer {
+    background: linear-gradient(to right, #001f3f, #004080); /* Navy blue gradient */
+    color: white;
+    padding: 30px 10px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+/* Footer Sections */
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f0f8ff; /* Light blueish text */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #cce7ff; /* Light blue links */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff; /* White on hover */
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #cce7ff; /* Light blue */
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #66b2ff; /* Brighter blue */
+}
+
+/* Dark Mode Toggle */
+.theme-toggle {
+    margin-top: 15px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    color: #001f3f; /* Navy blue text */
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    background: #cce7ff; /* Light blue */
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+.dark-mode .footer {
+    background: linear-gradient(to right, #002855, #003f7f); /* Darker navy blue */
+}
+
+.dark-mode .footer-section ul li a {
+    color: #99c2ff; /* Softer blue */
+}
+
+.dark-mode .social-icons a {
+    color: #80b3ff;
+}

@@ -1,0 +1,397 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #f2f2f2;  /* Light background for a medical feel */
+    padding: 15px 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex container for header */
+.hd1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.hd1 img {
+    max-height: 80px;
+}
+
+/* Navigation Bar */
+.nav nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav nav a {
+    text-decoration: none;
+    color: #2D9CDB;  /* Soft medical blue */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.nav nav a:hover {
+    color: #27AE60;  /* Teal green on hover */
+}
+
+/* Right-side buttons */
+.hb1 {
+    display: flex;
+    gap: 15px;
+}
+
+/* Buttons */
+.hb1 button {
+    background-color: #27AE60; /* Green for trust */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hb1 button:hover {
+    background-color: #219150; /* Darker green on hover */
+}
+#emergency{
+    background-color: red !important; 
+}
+/* main */
+main{
+    margin-top: 5vh;
+    background-color: #5193db;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr)); /* Increased width */
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    border: solid black;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 40vw; /*Increased card width*/
+    height: 50vh; /*Increased card height*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* .card:hover {
+    transform: scale(1.05);
+} */
+
+.card h2 {
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 30vw; /* Image size now fits well */
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    padding: 10px;
+    max-width: 90%;
+}
+.cbutton{
+    background-color: #27AE60; /* Green for trust */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* breadcrumb */
+/* .breadcrumb {
+    font-size: 16px;
+    color: #333;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: gray;
+}
+
+.separator {
+    margin: 0 5px;
+} */
+ /* pop model */
+/* Button to Open Popup */
+/* Button to Open Popup */
+.openPopup {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.openPopup:hover {
+    background: #0056b3;
+}
+
+/* Popup Container - Now Centered */
+.popup-container {
+    display: none;  /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; /* Centering the popup */
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Popup Box */
+.popup {
+    background: white;
+    width: 50%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.popup-header .closePopup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.popup-header .closePopup:hover {
+    color: red;
+}
+
+/* Navbar */
+.popup-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: lightgray;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.tab-button.active {
+    background: #007bff;
+    color: white;
+}
+
+/* Content Area */
+.popup-content {
+    min-height: 150px;
+}
+
+/* Hide inactive content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.nav-buttons .prevBtn,
+.nav-buttons .nextBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-buttons .prevBtn:hover,
+.nav-buttons .nextBtn:hover {
+    background-color: #0056b3;
+}
+.tab-content {
+    display: none; /* Hide all tabs initially */
+}
+
+.tab-content.active {
+    display: block; /* Show active tab */
+}
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin-top: 40px;
+}
+/* footer styling */
+/* Footer Styling */
+.footer {
+    background: linear-gradient(to right, #001f3f, #004080); /* Navy blue gradient */
+    color: white;
+    padding: 30px 10px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+/* Footer Sections */
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f0f8ff; /* Light blueish text */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #cce7ff; /* Light blue links */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff; /* White on hover */
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #cce7ff; /* Light blue */
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #66b2ff; /* Brighter blue */
+}
+
+/* Dark Mode Toggle */
+.theme-toggle {
+    margin-top: 15px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    color: #001f3f; /* Navy blue text */
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    background: #cce7ff; /* Light blue */
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+.dark-mode .footer {
+    background: linear-gradient(to right, #002855, #003f7f); /* Darker navy blue */
+}
+
+.dark-mode .footer-section ul li a {
+    color: #99c2ff; /* Softer blue */
+}
+
+.dark-mode .social-icons a {
+    color: #80b3ff;
+}
