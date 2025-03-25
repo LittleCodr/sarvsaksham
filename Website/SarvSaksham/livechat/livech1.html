@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Telemedicine Platform</title>
+    <link rel="stylesheet" href="./ivech1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="hd1">
+                <div>
+                    <img src="../../Website/images/logo.jpg" alt="LiveDost Logo" height="80px">
+                </div>
+                <div class="nav">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="./livecha.html">LiveDr.</a>
+                        <a href="../consult_now/cindex.html">Consult Now</a>
+                        <a href="../Firstaid/firstaid.html">FirstAid</a>
+                        <a href="../ExpertAdvice/exindex.html">Vital Voices</a>
+                        <a href="../NearH/neindex.html">ConnectUs</a>
+                    </nav>
+                </div>
+                <div class="hb1">
+                    <div>
+                        <button class="btn">LOGIN</button>
+                    </div>
+                    <div>
+                        <button id="emergency">!!SOS!!</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br>
+        <div class="video-row">
+            <div class="video-container">
+                <h3>Patient Video</h3>
+                <video id="patient-video" autoplay playsinline></video>
+                <div class="video-controls">
+                    <button id="start-video">Start Video</button>
+                    <button id="stop-video">Stop Video</button>
+                    <button id="start-asl">Start ASL Recognition</button>
+                </div>
+                <div class="asl-output">
+                    <h3>ASL to Text</h3>
+                    <div id="asl-text-output" contenteditable="true"></div>
+                    <button id="send-asl-text">Send to Chat</button>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <h3>Doctor Video</h3>
+                <video id="doctor-video" autoplay playsinline></video>
+                <div id="doctor-status">Doctor not connected</div>
+            </div>
+        </div>
+
+        <div class="chat-row">
+            <div class="chat-section">
+                <div class="chat-container">
+                    <h3>Patient Chat</h3>
+                    <div id="patient-chat-messages" class="chat-messages"></div>
+                    <div class="chat-input">
+                        <input type="text" id="patient-message-input" placeholder="Type your message...">
+                        <button id="patient-send-message">Send</button>
+                    </div>
+                </div>
+
+                <div class="file-upload">
+                    <h3>File Upload</h3>
+                    <input type="file" id="patient-file-upload">
+                    <button id="patient-upload-btn">Upload File</button>
+                    <div id="patient-file-list"></div>
+                </div>
+            </div>
+
+            <div class="chat-section">
+                <div class="chat-container">
+                    <h3>Doctor Chat</h3>
+                    <div id="doctor-chat-messages" class="chat-messages"></div>
+                    <div class="chat-input">
+                        <input type="text" id="doctor-message-input" placeholder="Type your message...">
+                        <button id="doctor-send-message">Send</button>
+                    </div>
+                </div>
+
+                <div class="file-upload">
+                    <h3>File Upload</h3>
+                    <input type="file" id="doctor-file-upload">
+                    <button id="doctor-upload-btn">Upload File</button>
+                    <div id="doctor-file-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="./livech1.js"></script>
+    <!-- Include your ML model script here -->
+    <!-- <script src="asl_model.js"></script> -->
+</body>
+</html>

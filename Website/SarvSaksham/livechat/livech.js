@@ -1,13 +1,17 @@
 let photosTaken = 0;
 let userPhotos = [];
 const startButton = document.getElementById("startVerification");
+const cameraDiv = document.getElementById("camera");
 
 startButton.addEventListener("click", async () => {
     const stream = await navigator.mediaDevices.getUserMedia({ video: true });
     const video = document.createElement("video");
     video.srcObject = stream;
     video.play();
-    document.body.appendChild(video);
+    
+    // Clear previous camera content
+    cameraDiv.innerHTML = "";
+    cameraDiv.appendChild(video);
     
     const capturePhoto = () => {
         const canvas = document.createElement("canvas");
@@ -22,7 +26,7 @@ startButton.addEventListener("click", async () => {
             setTimeout(capturePhoto, 2000);
         } else {
             stream.getTracks().forEach(track => track.stop());
-            video.remove();
+            cameraDiv.innerHTML = ""; // Remove video after capturing
             verifyPhotos();
         }
     };
@@ -31,23 +35,12 @@ startButton.addEventListener("click", async () => {
 });
 
 function verifyPhotos() {
-    // Simulating Aadhaar photo matching
     alert("Photos captured! Now comparing with Aadhaar photo...");
     setTimeout(() => {
         window.location.href = "livech1.html";
     }, 2000);
 }
-let slides = document.querySelectorAll(".slide");
-let index = 0;
-// code for slider
-function nextSlide() {
-    slides[index].classList.remove("active");
-    index = (index + 1) % slides.length; // Loop back to first slide
-    slides[index].classList.add("active");
-}
 
-// Change image every 2 seconds
-setInterval(nextSlide, 2000);
 // Dark Mode Toggle Script
 document.querySelector(".theme-toggle").addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");

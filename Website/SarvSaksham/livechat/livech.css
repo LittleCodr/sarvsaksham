@@ -125,6 +125,25 @@ video {
 .slide.active {
     opacity: 1;
 }
+
+/* camera portion */
+#camera {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    height: 300px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#camera video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Footer Styling */
 /* Footer Styling */
 .footer {
