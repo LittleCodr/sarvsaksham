@@ -1,83 +1,68 @@
-header {
-    background-color: #f2f2f2;  /* Light background for a medical feel */
-    padding: 15px 5%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfaff;
 }
 
-/* Flex container for header */
-.hd1 {
+header {
+    position: relative;
+    background: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a5acd;
+}
+.nav{
+    position: sticky;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-/* Logo */
-.hd1 img {
-    max-height: 80px;
-}
-
-/* Navigation Bar */
-.nav nav {
+.nav ul {
+    list-style: none;
     display: flex;
     gap: 20px;
+
 }
 
-.nav nav a {
+.nav ul li a {
     text-decoration: none;
-    color: #2D9CDB;  /* Soft medical blue */
-    font-size: 16px;
+    color: black;
     font-weight: bold;
-    padding: 8px 15px;
     transition: 0.3s;
 }
 
-.nav nav a:hover {
-    color: #133363;  /* Teal green on hover */
+.nav ul li a:hover {
+    color: #6a5acd;
 }
 
-/* Right-side buttons */
-.hb1 {
-    display: flex;
-    gap: 15px;
+.nav-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 10px;
 }
 
-/* Buttons */
-.hb1 button {
-    background: linear-gradient(to right, #2764c0, #003f7f); /* Gradient from lighter blue to navy */
+.signup {
+    color: #6a5acd;
+    border: 2px solid #6a5acd;
+}
+
+.contact {
+    background: linear-gradient(to right, #6a5acd, #9370db);
     color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 3px 3px 10px rgba(0, 31, 63, 0.2);
-
-}
-
-.hb1 button:hover {
-    background: linear-gradient(to right, #003f7f, #2764c0); /* Reversed gradient on hover */
-    transform: translateY(-3px);
-    box-shadow: 5px 5px 15px rgba(0, 31, 63, 0.3); /* Darker green on hover */
-}
-#emergency {
-    background: linear-gradient(to right, #ff0000, #cc0000); /* Red gradient */
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px 22px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
-    transition: all 0.3s ease-in-out;
-    animation: pulse 1.5s infinite alternate;
-}
-
-/* Hover Effect */
-#emergency:hover {
-    background: linear-gradient(to right, #cc0000, #990000); /* Darker red on hover */
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.9);
-    transform: scale(1.05);
 }

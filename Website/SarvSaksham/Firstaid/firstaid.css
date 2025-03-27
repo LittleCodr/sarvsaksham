@@ -1,78 +1,75 @@
-/* General Reset */
-* {
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #fdfaff;
 }
 
-/* Header Styling */
 header {
-    background-color: #f2f2f2;  /* Light background for a medical feel */
-    padding: 15px 5%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Flex container for header */
-.hd1 {
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a5acd;
+}
+.nav{
+    position: sticky;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-/* Logo */
-.hd1 img {
-    max-height: 80px;
-}
-
-/* Navigation Bar */
-.nav nav {
+.nav ul {
+    list-style: none;
     display: flex;
     gap: 20px;
+
 }
 
-.nav nav a {
+.nav ul li a {
     text-decoration: none;
-    color: #2D9CDB;  /* Soft medical blue */
-    font-size: 16px;
+    color: black;
     font-weight: bold;
-    padding: 8px 15px;
     transition: 0.3s;
 }
 
-.nav nav a:hover {
-    color: #27AE60;  /* Teal green on hover */
+.nav ul li a:hover {
+    color: #6a5acd;
 }
 
-/* Right-side buttons */
-.hb1 {
-    display: flex;
-    gap: 15px;
-}
-
-/* Buttons */
-.hb1 button {
-    background-color: #27AE60; /* Green for trust */
-    color: white;
-    border: none;
+.nav-buttons a {
+    text-decoration: none;
     padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+    border-radius: 20px;
+    margin-left: 10px;
 }
 
-.hb1 button:hover {
-    background-color: #219150; /* Darker green on hover */
+.signup {
+    color: #6a5acd;
+    border: 2px solid #6a5acd;
 }
-#emergency{
-    background-color: red !important; 
+
+.contact {
+    background: linear-gradient(to right, #6a5acd, #9370db);
+    color: white;
 }
 /* main */
 main{
     margin-top: 5vh;
-    background-color: #5193db;
+    background-color: #ffffff;
 }
 
 .container {
@@ -175,7 +172,7 @@ h1 {
 /* Button to Open Popup */
 .openPopup {
     padding: 10px 15px;
-    background: #007bff;
+    background: #6a5acd;
     color: white;
     border: none;
     cursor: pointer;
@@ -186,7 +183,7 @@ h1 {
 }
 
 .openPopup:hover {
-    background: #0056b3;
+    background: #6a5acd;
 }
 
 /* Popup Container - Now Centered */
@@ -248,7 +245,7 @@ h1 {
 }
 
 .tab-button.active {
-    background: #007bff;
+    background: #6a5acd;
     color: white;
 }
 
@@ -275,7 +272,7 @@ h1 {
 
 .nav-buttons .prevBtn,
 .nav-buttons .nextBtn {
-    background-color: #007bff;
+    background-color: #6a5acd;
     color: white;
     border: none;
     padding: 8px 15px;
@@ -286,7 +283,7 @@ h1 {
 
 .nav-buttons .prevBtn:hover,
 .nav-buttons .nextBtn:hover {
-    background-color: #0056b3;
+    background-color: #6a5acd;
 }
 .tab-content {
     display: none; /* Hide all tabs initially */
@@ -393,5 +390,5 @@ footer {
 }
 
 .dark-mode .social-icons a {
-    color: #80b3ff;
+    color: #6a5acd;
 }

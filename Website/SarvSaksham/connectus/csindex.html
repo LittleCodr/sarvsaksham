@@ -3,34 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Find the best hospitals near you with detailed information about facilities, ratings, and special discounts for armed forces personnel.">
+    <title>SarvSaksham - Find Best Hospitals</title>
     <link rel="stylesheet" href="./csstyle.css">
+    <link rel="stylesheet" href="hospitals.css">
 </head>
 <body>
     <header>
-        <div class="hd1">
-            <div>
-                <img src="../../images/logo.jpg" alt="LiveDost Logo" height="80px">
-            </div>
-            <div class="nav">
-                <nav>
-                    <a href="../index.html">Home</a>
-                    <a href="../livechat/livecha.html">LiveDr.</a>
-                    <a href="../consult_now/cindex.html">Consult Now</a>
-                    <a href="../Firstaid/firstaid.html">FirstAid</a>
-                    <a href="../ExpertAdvice/exindex.html">Vital Voices</a>
-                    <a href="./csindex.html">ConnectUs</a>
-                </nav>
-            </div>
-            <div class="hb1">
-                <div>
-                    <button class="btn">LOGIN</button>
-                </div>
-                <div>
-                    <button id="emergency">!!SOS!!</button>
-                </div>
+        <div class="nav">
+            <div class="logo">SarvSaksham</div>
+            <ul>
+                <li><a href="../landing_page/1.html">Home</a></li>
+                <li><a href="../livechat/livecha.html">LiveDr.</a></li>
+                <li><a href="../consult_now/cindex.html">Consult Now</a></li>
+                <li><a href="../Firstaid/firstaid.html">FirstAid</a></li>
+                <li><a href="../ExpertAdvice/exindex.html">Vital Voices</a></li>
+                <li><a href="../connectus/csindex.html">ConnectUs</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="https://sarvsaksham-profile.netlify.app/" class="signup">Sign Up</a>
+                <a href="#" class="contact">Contact Us</a>
             </div>
         </div>
     </header>
+
+    <main>
+        <section class="search-section">
+            <h1>Find the Best Hospitals Near You</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search by hospital name, specialty or location...">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="filter-options">
+                <select id="specialty-filter">
+                    <option value="">All Specialties</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="pediatrics">Pediatrics</option>
+                </select>
+                <select id="facility-filter">
+                    <option value="">All Facilities</option>
+                    <option value="emergency">24/7 Emergency</option>
+                    <option value="icu">ICU</option>
+                    <option value="pharmacy">In-house Pharmacy</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="hospital-listings">
+            <h2>Top Rated Hospitals</h2>
+            <div class="hospital-cards-container">
+                <!-- Cards will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="special-discounts">
+            <h2>Special Discounts</h2>
+            <div class="discount-banner">
+                <img src="https://via.placeholder.com/1200x200?text=Special+Discounts+for+Armed+Forces+Personnel" alt="Special discounts for armed forces">
+                <p>We proudly offer special discounts for armed forces personnel and their families. Thank you for your service!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About SarvSaksham</h3>
+                <p>Connecting patients with the best healthcare providers across the country.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Info</h3>
+                <p>Email: info@sarvsaksham.com</p>
+                <p>Phone: +91 9876543210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 SarvSaksham. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="./cscript.js"></script>
 </body>
 </html>

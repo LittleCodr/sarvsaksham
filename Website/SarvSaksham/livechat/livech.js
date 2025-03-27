@@ -36,8 +36,20 @@ startButton.addEventListener("click", async () => {
 
 function verifyPhotos() {
     alert("Photos captured! Now comparing with Aadhaar photo...");
+    
+    // Simulate photo comparison (2 seconds delay)
     setTimeout(() => {
-        window.location.href = "livech1.html";
+        // After comparison is done, ask for verification code
+        const secretCode = "12345"; // The code the doctor will provide
+        const userEnteredCode = prompt("Photo comparison complete! Please enter the verification code provided by your doctor:");
+        
+        if (userEnteredCode === secretCode) {
+            alert("Verification successful! Redirecting to next page...");
+            window.location.href = "livech1.html";
+        } else {
+            alert("Invalid verification code. Please try again.");
+            // You could add logic here to retry or handle the failure
+        }
     }, 2000);
 }
 
